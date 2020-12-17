@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+
+.index-box{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.39);
+  &--flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--home{
+    width: 25vw;
+    height: 100%;
+  }
+  &--content{
+    width: 75vw;
+    height: 100%;
+  }
+
+}
+.paper{
+  width:350px;
+  height: 300px;
+  &--home{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  &--row{
+    flex-direction: row;
+  }
+  &--col{
+    flex-direction: column;
+    justify-content:space-around;
+    button:nth-of-type(2),button:nth-of-type(3){
+      margin-left: 0;
+    }
+  }
+  &--item{
+    align-items: flex-start;
+  }
+  &--wrap{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    place-items: 10;
+  }
+}
+.center{
+  margin: 0 auto;
+}
+.avatar{
+  width: 30%;
+  height: 30%;
+  &--roate{
+    border: 5px solid rgba(153, 153, 153, 0.822);
+    animation: avaRoate 3.5s linear infinite;
+  }
+  @keyframes avaRoate {
+    0%{
+      transform: rotate(0);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+}
+a{
+  // color: #000;
+  text-decoration-line: none;
+}
+p{
+  margin: 0;
+}
